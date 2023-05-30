@@ -4,6 +4,7 @@ const ErrorPage = () => {
     const error = useRouteError()
     return (
         <div className="flex justify-center min-h-screen items-center">
+        <h1>Oops</h1>
             <h1>Halaman Tidak Di temukan</h1>
             <h1>{error.statusText}</h1>
         </div>

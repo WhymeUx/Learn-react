@@ -1,5 +1,6 @@
 import InputForm from "../Elements/Input";
 import Button from "../Elements/Button";
+import { Link } from "react-router-dom";
 
 const FormLogin = () => {
     return (
@@ -19,8 +20,16 @@ const FormLogin = () => {
                 placeholder="********"
             />
             <Button bg="bg-blue-600" title="Login" width="w-full"></Button>
+            <p className="text-center">
+                Dont have an account?
+                <Link
+                    className="font-bold ml-1 cursor-pointer text-blue-500"
+                    to="/register">
+                    Sign Up
+                </Link>
+            </p>
         </form>
     );
-}
+};
 
 export default FormLogin;
